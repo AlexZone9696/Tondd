@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "wallet_generator.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "wallet_generator.py"
+    }
+  ]
+}
